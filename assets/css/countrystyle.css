@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(166, 159, 192);
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Section Styles */
+  
+  .history-beauty {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section.history h2 {
+    color: #8B5A2B; 
+    font-weight: bold;
+  }
+  
+  .history-beauty p {
+    color: #000;
+    font-weight: bold;
+  }
+  

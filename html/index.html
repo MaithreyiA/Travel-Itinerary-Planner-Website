@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Explore the World</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="F:\Web Dev\Travel Itinerary Planner\assets\css\style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="top">
+  <!-- #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">
+          <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\globella.png" alt="Globella Icon" class="logo-icon">
+          Globella
+        </h1>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#destinations" class="navbar-link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+        <a href="#" class="btn btn-secondary">Booking Now</a>
+      </nav>
+    </div>
+  </header>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+
+      <section class="hero"
+        style="background-image: url('F:\Web Dev\Travel Itinerary Planner\assets\images\hero-bg-bottom.png') url('F:\Web Dev\Geekathon\assets\images\hero-bg-top.png')">
+        <div class="container">
+
+          <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+          <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+          <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+
+          <div class="hero-content">
+            <p class="section-subtitle">Explore Your Dreams!</p>
+            <h2 class="hero-title">Best Travel Itinerary Website</h2>
+            <p class="hero-text">
+              I travel because my bucket list won't complete itself.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Contact Us</a>
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\hero-gif.gif" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- #DESTINATION -->
+
+      <section class="section destination" id="destinations">
+        <div class="container">
+          <p class="section-subtitle">Top Destinations</p>
+          <h2 class="h2 section-title" style="color: rgb(132, 177, 232);">Choose Your Place </h2>
+          
+            <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search for a place..." >
+              <button onclick="searchDestination()">Go!</button>
+            </div>
+
+            <ul class="destination-list">
+
+            <!--MALDIVES-->
+
+            <li>
+              <a href="maldives-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-1.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Malé</p>
+                  <h3 class="h3 card-title">Maldives</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--SPAIN-->
+
+            <li>
+              <a href="spain-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-2.jpg" width="1110" height="480" loading="lazy"
+                    alt="Madrid, Spain" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Madrid</p>
+                  <h3 class="h3 card-title">Spain</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--INDIA-->
+
+            <li>
+              <a href="india-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-6.jpg" width="1110" height="480" loading="lazy"
+                    alt="New Delhi, India" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">New Delhi</p>
+                  <h3 class="h3 card-title">India</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--TURKEY-->
+
+            <li>
+              <a href="turkey-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-3.jpg" width="1110" height="480" loading="lazy"
+                    alt="Ankara, Turkey" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Ankara</p>
+                  <h3 class="h3 card-title">Turkey</h3>
+                </div>  
+              </a>
+            </li>
+
+            <!--JORDAN-->
+
+            <li>
+              <a href="jordan-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-4.jpg" width="1110" height="480" loading="lazy"
+                    alt="Amman, Jordan" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Amman</p>
+                  <h3 class="h3 card-title">Jordan</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--JAPAN-->
+
+            <li>
+              <a href="japan-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-5.jpg" width="1110" height="480" loading="lazy"
+                    alt="Tokyo, Japan" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Tokyo</p>
+                  <h3 class="h3 card-title">Japan</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--SWITZERLAND-->
+
+            <li>
+              <a href="swiz-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-7.jpg" width="1110" height="480" loading="lazy"
+                    alt="Zurich, Switzerland" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Zurich</p>
+                  <h3 class="h3 card-title">Switzerland</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--ITALY-->
+
+            <li>
+              <a href="italy-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-8.jpg" width="1110" height="480" loading="lazy"
+                    alt="Rome, Italy" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Rome</p>
+                  <h3 class="h3 card-title">Italy</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--FRANCE-->
+
+            <li>
+              <a href="france-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-9.jpg" width="1110" height="480" loading="lazy"
+                    alt="Paris, France" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Paris</p>
+                  <h3 class="h3 card-title">France</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--ICELAND-->
+
+            <li>
+              <a href="iceland-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*3mj6DE5UQgh-hLFJGMm02Q.png" width="1110" height="480" loading="lazy"
+                    alt="Iceland" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Reykjavík</p>
+                  <h3 class="h3 card-title">Iceland</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--NORWAY-->
+
+            <li>
+              <a href="norway-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="https://i0.wp.com/theorangebackpack.nl/wp-content/uploads/2023/11/PlayadelasCatedrales28529-scaled.jpg?resize=1110%2C480&ssl=1" width="1110" height="480" loading="lazy"
+                    alt="Norway" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Oslo</p>
+                  <h3 class="h3 card-title">Norway</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--NORWAY-->
+
+            <li>
+              <a href="vietnam-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="https://i0.wp.com/theorangebackpack.nl/wp-content/uploads/2019/10/Vietnam-The-Orange-Backpack-15.jpeg?resize=1110%2C480&ssl=1" width="1110" height="480" loading="lazy"
+                    alt="Vietnam" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Hanoi</p>
+                  <h3 class="h3 card-title">Vietnam</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--UNITED ARAB EMIRATES-->
+
+            <li>
+              <a href="dubai-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="https://quicklease.ae/files/images/publications/top-five-places-to-visit-in-dubai-with-your-rental-car.jpeg" width="1110" height="480" loading="lazy"
+                    alt="UAE" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Abu Dhabi</p>
+                  <h3 class="h3 card-title">United Arab Emirates</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--GREECE-->
+
+            <li>
+              <a href="greece-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="F:\Web Dev\Travel Itinerary Planner\assets\images\destination-10.jpg" width="1110" height="480" loading="lazy"
+                    alt="Greece" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Athens</p>
+                  <h3 class="h3 card-title">Greece</h3>
+                </div>
+              </a>
+            </li>
+
+            <!--NEW ZEALAND-->
+
+            <li>
+              <a href="nz-places-to-visit.html" class="destination-card">
+                <figure class="card-banner">
+                  <img src="https://i0.wp.com/theorangebackpack.nl/wp-content/uploads/2023/04/Thingvellir-Golden-Circle-2-scaled.jpg?resize=1110%2C480&ssl=1" width="1110" height="480" loading="lazy"
+                    alt="New Zealand" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-subtitle">Wellington</p>
+                  <h3 class="h3 card-title">New Zealand</h3>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- #ABOUT -->
+
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <p class="section-subtitle">About Us</p>
+            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+            <p class="about-text">
+              Embark on an unforgettable global adventure with our curated "Explore All" tour, traversing continents, cultures, and captivating landscapes in a seamless journey around the world.
+            </p>
+            <ul class="about-list">
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+                  <p class="about-item-text">
+                    Experiencing the world shouldn't break the bank! Discover affordable adventures.
+                  </p>
+                </div>
+
+
+              </li>
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly places</h3>
+                  <p class="about-item-text">
+                    No more worries! Trust us for Safe secured tours without compromising quality.
+                  </p>
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Reliable tour</h3>
+                  <p class="about-item-text">
+                    Reliability is our promise—explore with confidence on our trusted tours.
+                  </p>
+                </div>
+
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Booking Now</a>
+          </div>
+
+          <figure class="about-banner">
+            <img src="https://i.pinimg.com/originals/b0/4f/1d/b04f1d33c15b500180a79e98bdaaa335.gif" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+          
+        </div>
+      </section>
+
+  <!-- #FOOTER -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="container">
+      <section class="contact" id="contact">
+      <div class="footer-top">
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Japan, Tokyo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Maldives, Malé</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Australia, Canberra</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Thailand, Bangkok</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Morocco, Rabat</a>
+          </li>
+
+        </ul>
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lifestyle</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fashion</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Food & Drink</a>
+          </li>
+
+        </ul>
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+        <div class="footer-list">
+          <p class="footer-list-title">Contact us!</p>
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox!
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+
+        </div>
+      </div>
+      </section>
+
+      <div class="footer-bottom">
+        <a href="#" class="logo">Globella</a>
+        <a href="#" class="btn btn-primary" style="color: white;">Creator: Maithreyi A & Tejas K</a>
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/maithreyi-anand/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/tejask21/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!--  #GO TO TOP -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <!--  javascript link -->
+  <script src="F:\Web Dev\Travel Itinerary Planner\assets\js\script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -28,4 +28,3 @@ For an online Geekathon held by VIT AP on November 2023, I did this website for 
 ![web6](https://github.com/MaithreyiA/Travel-Itinerary-Planner-Website/assets/145844778/78b7420f-ec9e-4320-b6c0-0499be8a8d24)
 
 This is one of my first venture into Front-end Development! 
-
